@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Connectify QR®</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Existing styles remain the same */
+        
+        /* New Navigation Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a365d;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: #1a365d;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+
+        .nav-button {
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #2563eb;
+        }
+
+        /* Enhanced Hero Section */
+        #page1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        /* Template Grid Enhancements */
+        .template-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .template-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .template-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .template-card-content {
+            padding: 1.5rem;
+        }
+
+        .template-card h4 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #1a365d;
+        }
+    </style>
+
+</head>
+<body>
+
+     <!-- New Navigation Bar -->
+     <nav class="navbar">
+        <div class="nav-logo">
+            <img src="logo.jpeg" alt="Connectify QR Logo" class="logo-img">
+            <a href="#" class="logo-text">Connectify QR</a>
+        </div>
+        <div class="nav-links">
+            <a href="#page1" class="nav-link">Home</a>
+            <a href="#page2" class="nav-link">Templates</a>
+            <a href="#page3" class="nav-link">Features</a>
+            <a href="#page4" class="nav-link">About</a>
+            <button class="nav-button">Get Started</button>
+        </div>
+    </nav>
+
+    <div id="loader">
+        <h3>🔗 Connecting</h3>
+        <h3>📱 Smart QR Cards</h3>
+        <h3>🤝 Seamless Networking</h3>
+    </div>
+    
+    
+
+    <div id="main">
+        <!-- Replace your existing page1-content section with this -->
+<div id="page1-content">
+    <!-- <nav>
+        <h3>Digital Business Cards</h3>
+        <h4>Menu</h4>
+    </nav> -->
+    
+    <!-- <div class="hero-content">
+        <h1>Create Your Digital Identity</h1>
+        <p class="hero-description">Share your professional profile instantly with customizable digital business cards</p>
+        <button class="signup-btn">Create Your Card</button>
+    </div>
+</div> -->
+
+
+
+<!-- <div class="hero-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero_section_image.gif');">
+    <div class="hero-content">
+        <h1 style="color: white;">Create Your Digital Identity</h1>
+        <p class="hero-description">Share your professional profile instantly with customizable digital business cards</p>
+        <button class="signup-btn">Create Your Card</button>
+    </div>
+</div> -->
+
+
+<div class="hero-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero_section_image.gif');">
+    <!-- Particle effect container -->
+    <div class="particles">
+        <div class="particle" style="top: 20%; left: 10%"></div>
+        <div class="particle" style="top: 60%; left: 30%"></div>
+        <div class="particle" style="top: 40%; left: 50%"></div>
+        <div class="particle" style="top: 80%; left: 70%"></div>
+        <div class="particle" style="top: 30%; left: 90%"></div>
+    </div>
+    
+    <div class="hero-content">
+        <h1 style="color: white;">Create Your Digital Identity</h1>
+        <p class="hero-description">Share your professional profile instantly with customizable digital business cards</p>
+        <button class="signup-btn">Create Your Card</button>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+    </div>
+</div>
+
+
+
+<!-- Update page2 content -->
+<div id="page2">
+    <div class="page2-header">
+        <h3 class="left">Choose Your Template</h3>
+        <h3 class="right">Customizable Designs</h3>
+    </div>
+    <hr class="divider">
+    <div class="template-grid">
+        <div class="template-card">
+            <div class="template-image">
+                <img src="template1.png" alt="Template 1">
+            </div>
+            <div class="template-info">
+                <h4>Rahul Dalui</h4>
+                <p>FullStack Dev</p>
+                <p class="template-name">Minimalist</p>
+            </div>
+        </div>
+        <div class="template-card">
+            <div class="template-image">
+                <img src="template2.png" alt="Template 2">
+            </div>
+            <div class="template-info">
+                <h4>Alexander</h4>
+                <p>Art Director</p>
+                <p class="template-name">Corporate</p>
+            </div>
+        </div>
+        <div class="template-card">
+            <div class="template-image">
+                <img src="template3.png" alt="Template 3">
+            </div>
+            <div class="template-info">
+                <h4>Alexander</h4>
+                <p>Art Director</p>
+                <p class="template-name">Artistic</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Update page3 content -->
+<!-- <div id="page3">
+    <div id="page3-top">
+        <h4>Why Choose Digital Cards <span>Features</span></h4>
+        <h2>Smart Features for Modern Networking</h2>
+    </div>
+    <div id="page3-elements">
+        <div class="box">
+            <h3>QR Code Sharing</h3>
+            <p>Share your card instantly with a scannable QR code</p>
+        </div>
+        <div class="box">
+            <h3>Easy Updates</h3>
+            <p>Update your information anytime, everywhere</p>
+        </div>
+        <div class="box">
+            <h3>Analytics</h3>
+            <p>Track how many people view your card</p>
+        </div>
+    </div>
+</div> -->
+
+<div id="page3">
+    <h2 style="color: black;">Why Choose Digital Cards</h2>
+    <div id="page3-elements">
+        <div class="box">
+            <h3>QR Code Sharing</h3>
+            <img src="QR_share1.png" alt="QR Code Sharing">
+            <p>Share your card instantly with a scannable QR code</p>
+        </div>
+        <div class="box">
+            <h3>Easy Updates</h3>
+            <img src="update-transformed.png" alt="Easy Updates">
+            <p>Update your information anytime, everywhere</p>
+        </div>
+        <div class="box">
+            <h3>Analytics</h3>
+            <img src="analytics.png" alt="Analytics">
+            <p>Track how many people view your card</p>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Make sure your page4 HTML looks exactly like this -->
+<div id="page4" class="audience-section">
+    <div class="audience-container">
+        <h2 class="section-title">Who Is It For?</h2>
+        <div class="cards-container">
+            <div class="card-wrapper">
+                <img src="busines_owner.png" alt="Business Card Template 1" class="card-image">
+                <button class="audience-button">For Businesses</button>
+            </div>
+            <div class="card-wrapper">
+                <img src="individuals.png" alt="Business Card Template 2" class="card-image">
+                <button class="audience-button">For Individuals</button>
+            </div>
+            <div class="card-wrapper">
+                <img src="college1.png" alt="Business Card Template 2" class="card-image">
+                <button class="audience-button">For Institutions</button>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        <div id="page5">
+            <h1>Let's Connected</h1>
+            <div id="swiperdiv">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        
+                            <img src="https://images.unsplash.com/photo-1722356674838-6540ac2ee125?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            
+                            <img src="https://plus.unsplash.com/premium_photo-1718146018980-95d9afd69090?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        
+                            <img src="https://images.unsplash.com/photo-1721332149274-586f2604884d?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                             
+                        </div>
+                          <div class="swiper-slide">
+                                
+                            
+                            <img src="https://images.unsplash.com/photo-1722356674838-6540ac2ee125?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            
+                            <img src="https://plus.unsplash.com/premium_photo-1718146018980-95d9afd69090?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        
+                            <img src="https://images.unsplash.com/photo-1721332149274-586f2604884d?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h5>About Us</h5>
+                        <div class="footer-about">
+                            <p>Connectify QR is a modern digital business card solution that revolutionizes the way professionals connect and network.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h5>Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">→ Home</a></li>
+                            <li><a href="#">→ Templates</a></li>
+                            <li><a href="#">→ Features</a></li>
+                            <li><a href="#">→ About</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h5>Contact Info</h5>
+                        <ul class="footer-links">
+                            <li><a href="mailto:info@connectifyqr.com">📧 info@connectifyqr.com</a></li>
+                            <li><a href="tel:+1234567890">📱 +1 (234) 567-890</a></li>
+                            <li><a href="#">🌍 www.connectifyqr.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-divider"></div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-bottom-text">
+                        © 2023 Connectify QR. All rights reserved.
+                    </div>
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
